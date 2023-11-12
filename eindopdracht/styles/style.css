@@ -1,0 +1,334 @@
+/*Deze code is om de css te resetten, alle default styles worden hiermee op 0 gezet*/
+html {
+    margin: 0em;
+    padding: 0em;
+    box-sizing: border-box;
+}
+
+/*Deze code is voor de header, ook wel de titel van de pagina*/
+@font-face {
+    font-family: "Header";
+    src: url('../font/Monoton-Regular.ttf');
+}
+
+/*Deze code is voor het kleur geven aan de achtergrond*/
+body {
+    background-color: rgb(238, 238, 238, 255);
+    margin: 0em;
+}
+
+/*Deze code is voor het centeren van de header*/
+header {
+    text-align: center;
+    background-color: khaki;
+}
+
+/*Deze code is voor de styling van de titel, Shoot35mmfilm*/
+h1 {
+    font-weight: 400;
+    font-family: Header;
+    font-size: 3.5em;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+}
+
+/*Code voor de styling van de nav, met font en border*/
+nav {
+    border-bottom: 4px solid black;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.2em;
+    padding: 0%;
+    max-width: 100vw;
+}
+
+/*Code voor de styling van de nav, voor het uitlijnen*/
+nav ul {
+    display: flex;
+    justify-content: center;
+    margin-left: 12em;
+    margin-right: 5em;
+    padding-left: 0%;
+}
+
+/*Code voor de styling van de nav, voor het uitlijnen en voor het verwijderen van de bulletpoints*/
+nav ul li {
+    margin-right: 5em;
+    font-size: 1.5em;
+    list-style-type: none;
+}
+
+/*Code voor de styling van de nav, voor het aangeven van de linkstatus en om aan te geven dat de link een bestemming heeft*/
+.navstates:link {
+    text-decoration: none;
+    color: black;
+}
+
+/*Code voor de styling van de nav, voor het aangeven van actieve status link*/
+.navstates:active {
+    text-decoration: none;
+    color: black;
+}
+
+/*Code voor de styling van de nav, voor het aangeven van een bezochte link*/
+.navstates:visited {
+    text-decoration: none;
+    color: black;
+}
+
+/*Code voor de styling van de nav, voor het overheen hoveren*/
+.navstates:hover {
+    text-decoration: underline;
+    color: black;
+}
+
+/*Code voor de styling van de nav, voor het gebruiken van de tab toets*/
+.navstates:focus {
+    text-decoration: none;
+    color: black;
+}
+
+/*Code voor de styling van de main, alle tekst tussen de header en footer*/
+main {
+    margin-left: 5em;
+    margin-right: 5em;
+    font-family: 'Courier New', Courier, monospace;
+    max-width: 90vw;
+}
+
+/*Code voor de styling van alle sections*/
+section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    max-width: 90vw;
+    margin-top: 3.125em;
+    margin-left: 0em;
+    margin-right: 0em;
+}
+
+/*Code voor de styling van alle articles*/
+article {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 90vw;
+}
+
+/*Code voor de styling van alle figures*/
+figure {
+    margin: 0%;
+}
+
+/*Code voor de styling van alle figcaptions*/
+figcaption {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    max-width: 18vw;
+}
+
+/*Code voor de styling van figcaption onder de tijdlijn*/
+.captiontijdlijn {
+    max-width: 80vw;
+}
+
+/*Code voor de styling van de eerste 4 afbeeldingen op de index.html pagina, met transition*/
+.afbindex1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-block: 2em;
+    background-color: black;
+    width: auto;
+    height: 25vh;
+    animation: ease-in;
+    animation-duration: 3s;
+    animation-name: ease-inphotos;
+}
+
+/*Code voor de animatie, zodat de afbeeldingen tevoorschijn komen. Keyframes gebruikt om te zorgen dat animatie altijd werkt*/
+@keyframes ease-inphotos {
+    25% {
+        opacity: 0.25;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+/*Code voor de styling van de afbeelding van de tijdlijn*/
+.afb5 {
+    width: 80vw;
+    height: auto;
+    justify-content: center;
+}
+
+/*Code voor de styling van alle h2*/
+h2 {
+    margin-bottom: 0px;
+}
+
+/*Code voor de styling van alle p*/
+p {
+    margin-top: 0px;
+}
+
+/*Code voor de section op de index.html pagina*/
+.secindex1 {
+    margin-left: 7em;
+    margin-top: 5em;
+    max-width: 90vw;
+}
+
+/*Code voor de section op de index.html pagina*/
+.secindex2 {
+    margin-top: 1.25em;
+    margin-bottom: 3em;
+    max-width: 90vw;
+}
+
+/*Code voor de styling van onderste 3 afbeeldingen index.html pagina*/
+.afbindex2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-block: 2em;
+    background-color: black;
+    width: auto;
+    height: 32vh;
+    margin-right: 3em;
+}
+
+/*Code voor de styling van embded youtube video*/
+iframe {
+    width: 1280px;
+    height: 720px;
+}
+
+/*Code voor de afbeelding op de proces-ontwikkelen-analoge-fotos.html pagina*/
+.afbproces {
+    padding-block: 2em;
+    background-color: black;
+    width: 16vw;
+    height: auto;
+    margin-bottom: 3em;
+}
+
+/*Code voor de div op de proces-ontwikkelen-analoge-fotos.html pagina*/
+.divpr {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    max-height: 25vh;
+    margin-bottom: 1.5em;
+}
+
+/*Code voor de afbeelding op de overmij.html pagina*/
+.afbovermij {
+    padding-block: 2em;
+    background-color: black;
+    width: 21.5em;
+    height: auto;
+    margin-left: 4em;
+    animation-name: rotateme;
+    animation-duration: 1.5s;
+    animation-delay: 0.2s;
+}
+
+/*Code voor de animatie, zodat de afbeeldingen iets draait. Keyframes gebruikt om te zorgen dat animatie altijd werkt
+Definitie keyframe: worden gebruikt om animaties of effecten in animatie te veranderen over een bepaalde tijdspanne, 
+je geeft de code de opdracht mee om voor een bepaalde tijd een aantal frames aan te passen.*/
+@keyframes rotateme {
+    to {
+        transform: rotateZ(15deg);
+    }
+}
+
+/*Code voor de div op de overmij.html pagina*/
+.divom {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+/*Code voor de styling van div om de afbeeldingen heen op de gallerij pagina, om een grid te kunnen vormen*/
+.divg1 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    max-width: 95vw;
+    margin-top: 3.125em;
+}
+
+/*Code voor de styling van de afbeedlingen van de pagina gallerij, animatie die daarbij hoort*/
+.afbg {
+    padding-block: 2em;
+    background-color: black;
+    width: 25vw;
+    height: 40vh;
+    margin-bottom: 4em;
+    animation-name: flipgallery;
+    animation-duration: 3s;
+    animation-delay: 0.2s;
+}
+
+/*Code voor de animatie, zodat de afbeeldingen roteren. Keyframes gebruikt om te zorgen dat animatie altijd werkt*/
+@keyframes flipgallery {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/*Code voor de styling van de link, om aan te geven dat de link een bestemming heeft*/
+.linkstates:link {
+    text-decoration: none;
+    color: black;
+}
+
+/*Code voor de styling van de link, voor het aangeven van actieve status link*/
+.linkstates:active {
+    text-decoration: none;
+    color: black;
+}
+
+/*Code voor de styling van de link, voor het aangeven van een bezochte link*/
+.linkstates:visited {
+    text-decoration: none;
+    color: black;
+}
+
+/*Code voor de styling van de link, voor het overheen hoveren*/
+.linkstates:hover {
+    text-decoration: underline;
+    color: black;
+}
+
+/*Code voor de styling van de link, voor het gebruiken van de tab toets*/
+.linkstates:focus {
+    text-decoration: none;
+    color: black;
+}
+
+/*Code voor de styling van de footer, bronnen*/
+.divfooter {
+    border-top: 4px solid black;
+    margin-left: 5em;
+    margin-right: 5em;
+    margin-bottom: 2em;
+}
+
+.articlevakanties {
+    margin-bottom: 3em;
+}
+
+/*Code voor de styling van de footer, de copyright*/
+footer p:last-child {
+    text-align: center;
+    font-size: larger;
+    border-top: 4px solid black;
+    padding: 2em;
+    max-width: 100vw;
+    background-color: khaki;
+    margin: 0em;
+}
